@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner in = new Scanner(System.in);
+      int i,search;
+      System.out.println("enter the size array");
+      int len = in.nextInt();
+      int[] arr = new int[len];
+      System.out.println("enter the "+len+" elements of array");
+      for(i = 0; i < len ; i++)
+      {
+        arr[i]=in.nextInt();
+      }
+      System.out.println("Enter value to find");  
+      search = in.nextInt();  
+  
+      for(i=1;i<=len;i++)
+      {
+        if(arr[i]==search)
+        {
+          System.out.println(search+" is present in location "+i);
+          break;
+        }
+      }
+      if(i==len)
+      {
+        System.out.println(search + " isn't present in array.");
+      }
+        
+      
+  }
+}
