@@ -1,11 +1,17 @@
-import java.util.Scanner;
-public class DecimalToBinaryOctal {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a decimal number:");
-        int decimalNumber = scanner.nextInt();
-        String binaryNumber = Integer.toBinaryString(decimalNumber);
-        String octalNumber = Integer.toOctalString(decimalNumber);
-        System.out.println("Binary Number = " + binaryNumber);
-        System.out.println("Octal = " + octalNumber);
-    }}
+import java.util.*;
+class voteeligibility{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your age:");
+        int age=sc.nextInt();
+        if(age>=18){
+        System.out.println("You are eligible to vote");    
+        }
+        else if(age<0){
+            System.out.println("Invalid input");
+        }
+        else{
+            System.out.println("you are allowed to vote after"+(18-age)+"years");
+        }
+    }
+}
